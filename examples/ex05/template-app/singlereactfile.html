@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>The single file has all the things</title>
+    </head>
+    <body>
+        <div id="change">This is a reactjs file.</div>
+        <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+        <script type="text/babel">
+            const Data = () => <h1>This is some heading</h1>;
+            const container = document.getElementById("change");
+            console.log(container);
+            const root = ReactDOM.createRoot(container);
+            console.log(root);                        
+            root.render(<Data tab="home" />);
+        </script>
+    </body>
+</html>
